@@ -51,7 +51,7 @@ function Header() {
             }
           >
             <span
-              className="navbar-toggler-icon"
+              className="bi bi-list"
               style={
                 theme === 'light'
                   ? { color: '#212529', backgroundColor: 'transparent' }

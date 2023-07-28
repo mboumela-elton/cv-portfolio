@@ -64,7 +64,7 @@ function PortfolioFutur() {
             </p>
             <div class="mb-3">
               <div class="row justify-content-center align-items-center">
-                <div class="col-1">
+                <div class="col-2 col-md-1">
                   <div>
                     <i
                       class="fab fa-java fa-2x me-3"
@@ -90,7 +90,7 @@ function PortfolioFutur() {
             </div>
             <div class="mb-3">
               <div class="row justify-content-center align-items-center">
-                <div class="col-1">
+                <div class="col-2 col-md-1">
                   <div>
                     <i
                       class="fab fa-react fa-2x me-3"
@@ -116,7 +116,7 @@ function PortfolioFutur() {
             </div>
             <div class="mb-3">
               <div class="row justify-content-center align-items-center">
-                <div class="col-1">
+                <div class="col-2 col-md-1">
                   <div>
                     <i
                       class="fab fa-python fa-2x me-3"
@@ -142,7 +142,7 @@ function PortfolioFutur() {
             </div>
             <div class="mb-3">
               <div class="row justify-content-center align-items-center">
-                <div class="col-1">
+                <div class="col-2 col-md-1">
                   <div>
                     <i
                       class="fab fa-wordpress fa-2x me-3"
@@ -168,11 +168,11 @@ function PortfolioFutur() {
             </div>
             <div class="mb-3">
               <div class="row justify-content-center align-items-center">
-                <div class="col-1">
+                <div class="col-2 col-md-1">
                   <div>
                     <i
                       class="fa-solid fa-c fa-2x me-3"
-                      style={{ color: '#7e74f1' }}
+                      style={{ color: '#7e74f1', Width: '50px' }}
                     ></i>
                   </div>
                 </div>

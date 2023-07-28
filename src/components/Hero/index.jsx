@@ -93,7 +93,7 @@ function Hero() {
                   <i className="bi bi-linkedin"></i>
                 </Link>
               </li>
-              <li className="list-inline-item">
+              <li className="list-inline-item mx-2 mx-md-0">
                 <Link
                   data-toggle="tooltip"
                   title="mail"
