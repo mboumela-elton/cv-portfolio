@@ -131,7 +131,13 @@ function Contact() {
                 width={50}
                 className="bg-light rounded-4 mx-4"
               />
-              <span style={{ display: 'inline-block', position: 'absolute' }}>
+              <span
+                style={{
+                  display: 'inline-block',
+                  position: 'absolute',
+                  marginLeft: '50px',
+                }}
+              >
                 <h5
                   style={{
                     color: '#6C759F',
@@ -164,14 +170,20 @@ function Contact() {
                 src={mail}
                 alt="localisation"
                 width={50}
-                className="bg-light rounded-4 mx-4"
+                className="bg-light rounded-4"
+                style={{ marginLeft: '24px', marginRight: '24px' }}
               />
-              <span style={{ display: 'inline-block', position: 'absolute' }}>
+              <span
+                style={{
+                  display: 'inline-block',
+                  position: 'absolute',
+                }}
+              >
                 <h5
                   style={{
                     color: '#6C759F',
                     fontFamily: 'Plus Jakarta Sans',
-                    fontSize: '10 px',
+                    fontSize: '10px',
                   }}
                   className="mb-0 mt-1"
                 >
