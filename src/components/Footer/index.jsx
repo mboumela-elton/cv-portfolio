@@ -8,27 +8,17 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer className="my-5 py-5 border-top">
-      <Container>
-        <Row className="justify-content-md-center">
-          <Col sm={12} md={4}>
-            <Link to="/" className="navbar-brand text-uppercase fw-bold">
-              M.
-              <span
-                className="bg-gradient p-1 rounded-3 text-light"
-                style={{ backgroundColor: '#7E74F1' }}
-              >
-                SEL
-              </span>
-            </Link>
+      <Container className="text-center">
+        <Row className="justify-content-center my-3">
+          <Col sm={12}>
+            <i className="bi bi-whatsapp mx-3"></i>
+            <i className="bi bi-github mx-3"></i>
+            <i className="bi bi-instagram mx-3"></i>
+            <i className="bi bi-facebook mx-3"></i>
           </Col>
-          <Col sm={12} md={4} className="border-start border-end">
-            Mentions Légales
-          </Col>
-          <Col sm={12} md={4}>
-            <i className="bi bi-instagram"></i>
-            <i className="bi bi-instagram mx-5"></i>
-            <i className="bi bi-instagram"></i>
-          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col className="">꧁╭⊱𝘔. 𝘚𝘌𝘓⊱╮꧂</Col>
         </Row>
       </Container>
     </footer>

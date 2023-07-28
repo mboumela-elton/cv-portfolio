@@ -5,6 +5,7 @@ import 'uikit/dist/js/uikit-core.js';
 import { Link } from 'react-router-dom';
 import portrait from '../../assets/portrait.svg';
 import styled from 'styled-components';
+import cv from '../../file/CV-MBOUMELA_SOB_Elton_Lewis.pdf';
 
 const TitleStyle = styled.h6`
   display: inline-block;
@@ -57,29 +58,40 @@ function Hero() {
               Css, Javascript and React. Passionate about UI/UX
             </p>
             <div className="py-2">
-              <button>dowload cv</button>
+              <a href={cv} dowload>
+                <button className="btn btn-secondary">dowload cv</button>
+              </a>
             </div>
             <ul className="list-inline">
               <li className="list-inline-item">
-                <Link to="/" className="text-decoration-none text-dark">
+                <Link to="/" className="text-decoration-none text-secondary">
                   <i className="bi bi-linkedin"></i>
                 </Link>
               </li>
               <li className="list-inline-item mx-md-5">
-                <Link to="/" className="text-decoration-none text-dark">
+                <Link to="/" className="text-decoration-none text-secondary">
                   <i className="bi bi-instagram"></i>
                 </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/" className="text-decoration-none text-dark">
+                <Link to="/" className="text-decoration-none text-secondary">
                   <i className="bi bi-whatsapp"></i>
                 </Link>
               </li>
             </ul>
           </div>
           <div className="col-12 offset-md-2 col-md-5">
-            <div>
-              <img src={portrait} alt="photo_profil" className="w-100 h-100" />
+            <div class="uk-animation-toggle" tabindex="0">
+              <div
+                class="uk-card uk-card-default uk-card-body uk-animation-fade"
+                style={{ background: 'transparent' }}
+              >
+                <img
+                  src={portrait}
+                  alt="photo_profil"
+                  className="w-100 h-100"
+                />
+              </div>
             </div>
           </div>
         </div>
