@@ -23,7 +23,9 @@ function Header() {
             to="/"
             className="navbar-brand text-uppercase fw-bold"
             style={
-              theme === 'light' ? { color: '#212529' } : { color: '#6C757D' }
+              theme === 'light'
+                ? { color: '#212529', pointerEvents: 'none' }
+                : { color: '#6C757D', pointerEvents: 'none' }
             }
           >
             <span
@@ -34,6 +36,29 @@ function Header() {
             </span>
             SEL
           </Link>
+          <button
+            className="navbar-toggler my-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style={
+              theme === 'light'
+                ? { color: '#212529', backgroundColor: 'transparent' }
+                : { backgroundColor: 'transparent', color: '#F1F1F1' }
+            }
+          >
+            <span
+              className="navbar-toggler-icon"
+              style={
+                theme === 'light'
+                  ? { color: '#212529', backgroundColor: 'transparent' }
+                  : { backgroundColor: 'transparent', color: '#F1F1F1' }
+              }
+            ></span>
+          </button>
           <div
             className="collapse navbar-collapse justify-content-center"
             id="navbarNav"
@@ -137,30 +162,6 @@ function Header() {
               ></button>
             )}
           </div>
-
-          <button
-            className="navbar-toggler my-1"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style={
-              theme === 'light'
-                ? { color: '#212529', backgroundColor: 'transparent' }
-                : { backgroundColor: 'transparent', color: '#F1F1F1' }
-            }
-          >
-            <span
-              className="bi bi-list"
-              style={
-                theme === 'light'
-                  ? { color: '#212529', backgroundColor: 'transparent' }
-                  : { backgroundColor: 'transparent', color: '#F1F1F1' }
-              }
-            ></span>
-          </button>
         </div>
       </nav>
     </header>

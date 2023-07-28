@@ -63,19 +63,44 @@ function Hero() {
               </a>
             </div>
             <ul className="list-inline">
-              <li className="list-inline-item">
-                <Link to="/" className="text-decoration-none text-secondary">
+              <li className="list-inline-item mx-md-5">
+                <Link
+                  data-toggle="tooltip"
+                  title="github"
+                  to="https://github.com/mboumela-elton"
+                  className="text-decoration-none text-secondary"
+                >
+                  <i className="bi bi-github"></i>
+                </Link>
+              </li>
+              <li className="list-inline-item mx-2">
+                <Link
+                  data-toggle="tooltip"
+                  title="whatsapp"
+                  to="https://wa.me/+237691873720"
+                  className="text-decoration-none text-secondary"
+                >
+                  <i className="bi bi-whatsapp"></i>
+                </Link>
+              </li>
+              <li className="list-inline-item mx-2 mx-md-5">
+                <Link
+                  data-toggle="tooltip"
+                  title="linkledin"
+                  to="https://www.linkedin.com/in/elton-mboumela-679a1226b/"
+                  className="text-decoration-none text-secondary"
+                >
                   <i className="bi bi-linkedin"></i>
                 </Link>
               </li>
-              <li className="list-inline-item mx-md-5">
-                <Link to="/" className="text-decoration-none text-secondary">
-                  <i className="bi bi-instagram"></i>
-                </Link>
-              </li>
               <li className="list-inline-item">
-                <Link to="/" className="text-decoration-none text-secondary">
-                  <i className="bi bi-whatsapp"></i>
+                <Link
+                  data-toggle="tooltip"
+                  title="mail"
+                  to="mailto:mboumelae@gmail.com?subject=Need more informations"
+                  className="text-decoration-none text-secondary"
+                >
+                  <i className="bi bi-envelope-at"></i>
                 </Link>
               </li>
             </ul>

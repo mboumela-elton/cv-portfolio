@@ -27,7 +27,7 @@ const TitleCustom = styled.h1`
   font-size: 40px;
   font-style: normal;
   font-weight: 7px;
-  width: 100px;
+  width: auto;
 `;
 
 const CardStyle = styled.div`

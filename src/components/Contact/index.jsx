@@ -10,6 +10,7 @@ import phone from '../../assets/icons/phone-call.svg';
 import mail from '../../assets/icons/mail.svg';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 const TitleStyle = styled.h6`
   display: inline-block;
@@ -50,14 +51,16 @@ function Contact() {
     setValidated(true);
   };
   return (
-    <section>
+    <section className="my-5 py-5">
       <Container>
-        <div>
+        <div className="d-flex justify-content-center">
           <div>
             <TiretDisign></TiretDisign>
             <TitleStyle>CONTACT</TitleStyle>
           </div>
-          <TitleCustom className="text-secondary">Call me</TitleCustom>
+        </div>
+        <div className="d-flex justify-content-center mb-5 mb-md-5 pb-md-5">
+          <TitleCustom className="text-secondary">TO JOIN ME</TitleCustom>
         </div>
         <Row className="align-items-center justify-content-center gy-3 gx-3">
           <Col sm={12} md={8}>
@@ -91,11 +94,34 @@ function Contact() {
                 src={pin}
                 alt="localisation"
                 width={50}
-                className="bg-light rounded-4 mx-5"
+                className="bg-light rounded-4 mx-4"
               />
               <span style={{ display: 'inline-block', position: 'absolute' }}>
-                <h5 className="mb-0">Yaoundé</h5>
-                <h6 className="mt-0">Melen</h6>
+                <h5
+                  className="mb-0 mt-1"
+                  style={{
+                    color: '#6C759F',
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontSize: '10 px',
+                  }}
+                >
+                  Address
+                </h5>
+                <Link
+                  data-toggle="tooltip"
+                  title="view on map"
+                  to="https://maps.app.goo.gl/k68kDJ4BH5LbQEat5?g_st=iw "
+                >
+                  <h6
+                    style={{
+                      color: '#6C757D',
+                      fontSize: '9px',
+                    }}
+                    className="mt-0"
+                  >
+                    Cameroun-Yaoundé, Melen, proche ENSPY
+                  </h6>
+                </Link>
               </span>
             </div>
             <div className="my-4">
@@ -103,11 +129,34 @@ function Contact() {
                 src={phone}
                 alt="localisation"
                 width={50}
-                className="bg-light rounded-4 mx-5"
+                className="bg-light rounded-4 mx-4"
               />
               <span style={{ display: 'inline-block', position: 'absolute' }}>
-                <h5 className="mb-0">Yaoundé</h5>
-                <h6 className="mt-0">Melen</h6>
+                <h5
+                  style={{
+                    color: '#6C759F',
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontSize: '10 px',
+                  }}
+                  className="mb-0 mt-1"
+                >
+                  Contact
+                </h5>
+                <Link
+                  data-toggle="tooltip"
+                  title="appeler +237 620 26 39 11"
+                  to="tel:+237620263911"
+                >
+                  <h6
+                    style={{
+                      color: '#6C757D',
+                      fontSize: '9px',
+                    }}
+                    className="mt-0"
+                  >
+                    +237 620 26 39 11/ +237 6 91 87 37 20
+                  </h6>
+                </Link>
               </span>
             </div>
             <div className="my-4">
@@ -115,11 +164,34 @@ function Contact() {
                 src={mail}
                 alt="localisation"
                 width={50}
-                className="bg-light rounded-4 mx-5"
+                className="bg-light rounded-4 mx-4"
               />
               <span style={{ display: 'inline-block', position: 'absolute' }}>
-                <h5 className="mb-0">Yaoundé</h5>
-                <h6 className="mt-0">Melen</h6>
+                <h5
+                  style={{
+                    color: '#6C759F',
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontSize: '10 px',
+                  }}
+                  className="mb-0 mt-1"
+                >
+                  E-mail
+                </h5>
+                <Link
+                  data-toggle="tooltip"
+                  title="mail"
+                  to="mailto:mboumelae@gmail.com?subject=Need more informations"
+                >
+                  <h6
+                    style={{
+                      color: '#6C757D',
+                      fontSize: '9px',
+                    }}
+                    className="my-0"
+                  >
+                    mboumelae@gmail.com
+                  </h6>
+                </Link>
               </span>
             </div>
           </Col>
