@@ -39,31 +39,33 @@ const TitleCustom = styled.h1`
 `;
 
 function Contact() {
-  const [formData, setFormData] = useState({});
+  // const [formData, setFormData] = useState({});
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-  };
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  // };
 
+  const [good, setGood] = useState(false);
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     const form = event.currentTarget;
-    if (form.checkValidity() === false || validated === true) {
+    if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     } else {
-      event.preventDefault();
-      // const response = await fetch('http://172.20.10.2:8080/user', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // });
-      // if (response.ok) {
-      setValidated(true);
-      // }
+      setGood(true);
     }
+    event.preventDefault();
+    // const response = await fetch('http://172.20.10.2:8080/user', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify(formData),
+    // });
+    // if (response.ok) {
+    setValidated(true);
+    // }
   };
 
   return (
@@ -86,7 +88,7 @@ function Contact() {
                   type="text"
                   name="name"
                   placeholder="Your name"
-                  onChange={handleChange}
+                  // onChange={handleChange}
                   required
                 />
               </Form.Group>
@@ -95,7 +97,7 @@ function Contact() {
                   type="email"
                   name="email"
                   placeholder="email"
-                  onChange={handleChange}
+                  // onChange={handleChange}
                   required
                 />
               </Form.Group>
@@ -105,7 +107,7 @@ function Contact() {
                   name="message"
                   placeholder="message"
                   rows={5}
-                  onChange={handleChange}
+                  // onChange={handleChange}
                   required
                 />
               </Form.Group>
@@ -117,7 +119,7 @@ function Contact() {
                 Submit form
               </Button>
             </Form>
-            {validated ? (
+            {good ? (
               <p
                 className="btn btn-success w-100"
                 style={{ pointerEvents: 'none' }}
