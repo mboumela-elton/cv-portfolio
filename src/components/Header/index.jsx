@@ -9,7 +9,7 @@ function Header() {
   const { toggleTheme, theme } = useContext(ThemeContext);
 
   return (
-    <header className="py-5 py-md-4 my-1 my-md-5">
+    <header className="py-5 py-md-4 my-1 my-md-5" id="header">
       <nav
         className="navbar navbar-expand-md fixed-top"
         style={
@@ -65,8 +65,8 @@ function Header() {
           >
             <ul className="navbar-nav text-light">
               <li className="nav-item">
-                <Link
-                  to="/"
+                <a
+                  href="#services"
                   className="nav-link"
                   style={
                     theme === 'light'
@@ -75,11 +75,11 @@ function Header() {
                   }
                 >
                   Services
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link
-                  to="/"
+                <a
+                  href="#expertises"
                   className="nav-link"
                   style={
                     theme === 'light'
@@ -88,11 +88,11 @@ function Header() {
                   }
                 >
                   Expertises
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link
-                  to="/"
+                <a
+                  href="#portfolio"
                   className="nav-link"
                   style={
                     theme === 'light'
@@ -101,11 +101,11 @@ function Header() {
                   }
                 >
                   Portfolio
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link
-                  to="/"
+                <a
+                  href="#blog"
                   className="nav-link"
                   style={
                     theme === 'light'
@@ -114,11 +114,11 @@ function Header() {
                   }
                 >
                   blog
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link
-                  to="/"
+                <a
+                  href="#contact"
                   className="nav-link"
                   style={
                     theme === 'light'
@@ -127,7 +127,7 @@ function Header() {
                   }
                 >
                   contact
-                </Link>
+                </a>
               </li>
               <li className="nav-item d-md-none" onClick={() => toggleTheme()}>
                 {theme === 'light' ? (

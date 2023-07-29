@@ -39,19 +39,35 @@ const TitleCustom = styled.h1`
 `;
 
 function Contact() {
+  const [formData, setFormData] = useState({});
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
+    if (form.checkValidity() === false || validated === true) {
       event.preventDefault();
       event.stopPropagation();
+    } else {
+      event.preventDefault();
+      const response = await fetch('http://localhost:8080/user', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        setValidated(true);
+      }
     }
-
-    setValidated(true);
   };
+
   return (
-    <section className="my-5 py-5">
+    <section className="my-5 py-5" id="contact">
       <Container>
         <div className="d-flex justify-content-center">
           <div>
@@ -66,16 +82,30 @@ function Contact() {
           <Col sm={12} md={8}>
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="Form.ControlInput1">
-                <Form.Control type="text" placeholder="Your name" required />
+                <Form.Control
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  onChange={handleChange}
+                  required
+                />
               </Form.Group>
               <Form.Group className="mb-3" controlId="Form.ControlInput2">
-                <Form.Control type="email" placeholder="email" required />
+                <Form.Control
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                  onChange={handleChange}
+                  required
+                />
               </Form.Group>
               <Form.Group className="mb-3" controlId="Form.ControlTextarea1">
                 <Form.Control
                   as="textarea"
+                  name="message"
                   placeholder="message"
                   rows={5}
+                  onChange={handleChange}
                   required
                 />
               </Form.Group>
@@ -87,6 +117,14 @@ function Contact() {
                 Submit form
               </Button>
             </Form>
+            {validated ? (
+              <p
+                className="btn btn-success w-100"
+                style={{ pointerEvents: 'none' }}
+              >
+                SUCESS
+              </p>
+            ) : null}
           </Col>
           <Col md={{ offset: 1 }}>
             <div className="my-4">

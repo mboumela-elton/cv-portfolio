@@ -39,7 +39,7 @@ const PurpleProgress = styled.div`
 
 function PortfolioFutur() {
   return (
-    <section className="my-5 py-5">
+    <section className="my-5 py-5" id="portfolio">
       <div className="container">
         <div className="mb-5">
           <div>
@@ -62,18 +62,21 @@ function PortfolioFutur() {
               front-end and experimenting with new technologies and frameworks,
               and here you can see a summary of my skills.
             </p>
-            <div class="mb-3">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-2 col-md-1">
+            <div className="mb-3">
+              <div className="row justify-content-center align-items-center">
+                <div className="col-2 col-md-1">
                   <div>
                     <i
-                      class="fab fa-java fa-2x me-3"
+                      className="fab fa-java fa-2x me-3"
                       style={{ color: '#7e74f1' }}
                     ></i>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="progress text-center" style={{ height: '15px' }}>
+                <div className="col">
+                  <div
+                    className="progress text-center"
+                    style={{ height: '15px' }}
+                  >
                     <PurpleProgress
                       className="progress-bar"
                       role="progressbar"
@@ -88,18 +91,21 @@ function PortfolioFutur() {
                 </div>
               </div>
             </div>
-            <div class="mb-3">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-2 col-md-1">
+            <div className="mb-3">
+              <div className="row justify-content-center align-items-center">
+                <div className="col-2 col-md-1">
                   <div>
                     <i
-                      class="fab fa-react fa-2x me-3"
+                      className="fab fa-react fa-2x me-3"
                       style={{ color: '#7e74f1' }}
                     ></i>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="progress text-center" style={{ height: '15px' }}>
+                <div className="col">
+                  <div
+                    className="progress text-center"
+                    style={{ height: '15px' }}
+                  >
                     <PurpleProgress
                       className="progress-bar"
                       role="progressbar"
@@ -114,18 +120,21 @@ function PortfolioFutur() {
                 </div>
               </div>
             </div>
-            <div class="mb-3">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-2 col-md-1">
+            <div className="mb-3">
+              <div className="row justify-content-center align-items-center">
+                <div className="col-2 col-md-1">
                   <div>
                     <i
-                      class="fab fa-python fa-2x me-3"
+                      className="fab fa-python fa-2x me-3"
                       style={{ color: '#7e74f1' }}
                     ></i>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="progress text-center" style={{ height: '15px' }}>
+                <div className="col">
+                  <div
+                    className="progress text-center"
+                    style={{ height: '15px' }}
+                  >
                     <PurpleProgress
                       className="progress-bar"
                       role="progressbar"
@@ -140,18 +149,21 @@ function PortfolioFutur() {
                 </div>
               </div>
             </div>
-            <div class="mb-3">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-2 col-md-1">
+            <div className="mb-3">
+              <div className="row justify-content-center align-items-center">
+                <div className="col-2 col-md-1">
                   <div>
                     <i
-                      class="fab fa-wordpress fa-2x me-3"
+                      className="fab fa-wordpress fa-2x me-3"
                       style={{ color: '#7e74f1' }}
                     ></i>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="progress text-center" style={{ height: '15px' }}>
+                <div className="col">
+                  <div
+                    className="progress text-center"
+                    style={{ height: '15px' }}
+                  >
                     <PurpleProgress
                       className="progress-bar"
                       role="progressbar"
@@ -166,18 +178,21 @@ function PortfolioFutur() {
                 </div>
               </div>
             </div>
-            <div class="mb-3">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-2 col-md-1">
+            <div className="mb-3">
+              <div className="row justify-content-center align-items-center">
+                <div className="col-2 col-md-1">
                   <div>
                     <i
-                      class="fa-solid fa-c fa-2x me-3"
+                      className="fa-solid fa-c fa-2x me-3"
                       style={{ color: '#7e74f1', Width: '50px' }}
                     ></i>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="progress text-center" style={{ height: '15px' }}>
+                <div className="col">
+                  <div
+                    className="progress text-center"
+                    style={{ height: '15px' }}
+                  >
                     <PurpleProgress
                       className="progress-bar"
                       role="progressbar"

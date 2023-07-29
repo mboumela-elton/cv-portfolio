@@ -42,7 +42,7 @@ const IconStyle = styled.i`
 `;
 function Services() {
   return (
-    <section className="my-5 py-5">
+    <section className="my-5 py-5" id="services">
       <div className="container">
         <div className="d-flex justify-content-center">
           <div>

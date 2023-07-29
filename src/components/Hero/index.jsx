@@ -43,7 +43,7 @@ const Mboumela = styled.h1`
 
 function Hero() {
   return (
-    <section className="mb-5 pb-5">
+    <section className="mb-5 pb-5" id="hero">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 col-md-5 ">
@@ -58,7 +58,7 @@ function Hero() {
               Css, Javascript and React. Passionate about UI/UX
             </p>
             <div className="py-2">
-              <a href={cv} dowload>
+              <a href={cv} download>
                 <button className="btn btn-secondary">dowload cv</button>
               </a>
             </div>
@@ -106,9 +106,9 @@ function Hero() {
             </ul>
           </div>
           <div className="col-12 offset-md-2 col-md-5">
-            <div class="uk-animation-toggle" tabindex="0">
+            <div className="uk-animation-toggle">
               <div
-                class="uk-card uk-card-default uk-card-body uk-animation-fade"
+                className="uk-card uk-card-default uk-card-body uk-animation-fade"
                 style={{ background: 'transparent' }}
               >
                 <img

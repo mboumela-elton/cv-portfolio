@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="my-5 py-5 border-top">
+    <footer className="mt-5 py-5 border-top" id="footer">
       <Container className="text-center">
         <Row className="justify-content-center my-3">
           <Col sm={12}>
