@@ -55,7 +55,7 @@ function Contact() {
       event.stopPropagation();
     } else {
       event.preventDefault();
-      const response = await fetch('http://localhost:8080/user', {
+      const response = await fetch('http://172.20.10.2:8080/user', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
