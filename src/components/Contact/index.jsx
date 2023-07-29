@@ -54,6 +54,7 @@ function Contact() {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+      setGood(false);
     } else {
       setGood(true);
     }
