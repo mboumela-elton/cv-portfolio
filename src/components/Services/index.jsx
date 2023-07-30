@@ -59,11 +59,30 @@ function Services() {
               <div className="card-img-top">
                 <IconStyle className="bi bi-palette d-block"></IconStyle>
               </div>
-              <div className="card-body mx-auto d-block">
-                <h5 className="card-title text-center">Card title</h5>
+              <div className="card-body mx-auto d-block  bg-light">
+                <h5 className="card-title text-center">
+                  <b>Front-end developper</b>
+                </h5>
                 <p className="card-text text-center">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  I develop responsive, reactive and interactive interfaces
+                  based on contemporary design with attention to detail...
+                </p>
+              </div>
+            </CardStyle>
+          </div>
+          <div className="col-12 col-md-3">
+            <CardStyle className="card w-100 h-100">
+              <div className="card-img-top">
+                <IconStyle className="bi bi-gear-wide-connected d-block"></IconStyle>
+              </div>
+              <div className="card-body mx-auto d-block bg-light">
+                <h5 className="card-title text-center">
+                  <b>Back-end developper</b>
+                </h5>
+                <p className="card-text text-center">
+                  I ensure the common and particular functionalities (at your
+                  option) of the applications until the hosting and the
+                  maintenance
                 </p>
               </div>
             </CardStyle>
@@ -73,25 +92,14 @@ function Services() {
               <div className="card-img-top">
                 <IconStyle className="bi bi-globe d-block"></IconStyle>
               </div>
-              <div className="card-body mx-auto d-block">
-                <h5 className="card-title text-center">Card title</h5>
+              <div className="card-body mx-auto d-block bg-light">
+                <h5 className="card-title text-center">
+                  <b>transversal notions</b>
+                </h5>
                 <p className="card-text text-center">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </CardStyle>
-          </div>
-          <div className="col-12 col-md-3">
-            <CardStyle className="card w-100 h-100">
-              <div className="card-img-top">
-                <IconStyle className="bi bi-globe d-block"></IconStyle>
-              </div>
-              <div className="card-body mx-auto d-block">
-                <h5 className="card-title text-center">Card title</h5>
-                <p className="card-text text-center">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  I am open to the agile method and I have knowledge of
+                  artificial intelligence, machine learning, networks,
+                  cybersecurity, scraping, trading ...
                 </p>
               </div>
             </CardStyle>

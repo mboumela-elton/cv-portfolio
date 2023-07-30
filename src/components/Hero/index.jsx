@@ -50,12 +50,13 @@ function Hero() {
             <TiretDisign></TiretDisign>
             <TitleStyle>MY NAME IS</TitleStyle>
             <br />
-            <TitleCustom className="text-secondary">Elton</TitleCustom>
-            <Mboumela>Mboumela.</Mboumela>
-            <p className="d-none d-md-block">
-              Creative front-end developer with more than +2 years of experience
-              in enterprise companies and startups. Proficient in Html, Tailwind
-              Css, Javascript and React. Passionate about UI/UX
+            <TitleCustom className="text-secondary my-1 my-md-2">
+              Elton
+            </TitleCustom>
+            <Mboumela className="my-1 my-md-2">Mboumela.</Mboumela>
+            <p className="">
+              As a Full Stack developer, I use several cutting-edge technologies
+              such as Java/Spring, React, Wordpress, Python, SQL, and many more.
             </p>
             <div className="py-2">
               <a href={cv} download>

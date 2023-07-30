@@ -9,19 +9,19 @@ import Paper from '@mui/material/Paper';
 
 const steps = [
   {
-    school: 'school 1',
-    diploma: `diploma 1`,
-    year: 'year 1',
+    school: 'Ecole Nationale Polytechnique de Yaoundé',
+    diploma: `Masters Level`,
+    year: '2020 - 2023',
   },
   {
-    school: 'school 2',
-    diploma: `diploma 2`,
-    year: 'year 2',
+    school: 'Université de Yaoundé I, Mathématics branch',
+    diploma: ``,
+    year: '2021-2022',
   },
   {
-    school: 'school 3',
-    diploma: `diploma 3`,
-    year: 'year 3',
+    school: 'Collège Bilingue Adonaï',
+    diploma: `Baccalaureate (highest honors)`,
+    year: '2013 - 2020',
   },
 ];
 
@@ -59,7 +59,12 @@ export default function VerticalLinearStepper() {
             </StepLabel>
             <StepContent>
               <h5 className="my-2">{step.diploma}</h5>
-              <h6 className="mt-2 mb-4">{step.year}</h6>
+              <h6
+                className="mt-2 mb-4"
+                style={{ color: '#6C757D', fontFamily: 'Plus Jakarta Sans' }}
+              >
+                {step.year}
+              </h6>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <Button
@@ -98,7 +103,10 @@ export default function VerticalLinearStepper() {
           elevation={0}
           sx={{ p: 3 }}
         >
-          <p>All steps completed - you&apos;re finished</p>
+          <p>
+            you have finished my academic course, click if you want to start
+            again
+          </p>
           <Button
             style={{ backgroundColor: '#7E74F1' }}
             onClick={handleReset}

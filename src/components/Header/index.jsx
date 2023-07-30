@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { ThemeContext } from '../../utils/context';
 
@@ -9,7 +8,7 @@ function Header() {
   const { toggleTheme, theme } = useContext(ThemeContext);
 
   return (
-    <header className="py-5 py-md-4 my-1 my-md-5" id="header">
+    <header className="py-4 py-md-4 my-1 my-md-4" id="header">
       <nav
         className="navbar navbar-expand-md fixed-top"
         style={
@@ -19,13 +18,11 @@ function Header() {
         }
       >
         <div className="container">
-          <Link
-            to="/"
+          <a
+            href="#hero"
             className="navbar-brand text-uppercase fw-bold"
             style={
-              theme === 'light'
-                ? { color: '#212529', pointerEvents: 'none' }
-                : { color: '#6C757D', pointerEvents: 'none' }
+              theme === 'light' ? { color: '#212529' } : { color: '#6C757D' }
             }
           >
             <span
@@ -35,7 +32,7 @@ function Header() {
               M.
             </span>
             SEL
-          </Link>
+          </a>
           <button
             className="navbar-toggler my-1"
             type="button"
@@ -77,7 +74,7 @@ function Header() {
                   Services
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   href="#expertises"
                   className="nav-link"
@@ -89,8 +86,8 @@ function Header() {
                 >
                   Expertises
                 </a>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              <li className="nav-item mx-md-5">
                 <a
                   href="#portfolio"
                   className="nav-link"
@@ -100,10 +97,10 @@ function Header() {
                       : { color: '#F1F1F1' }
                   }
                 >
-                  Portfolio
+                  Skills
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   href="#blog"
                   className="nav-link"
@@ -115,7 +112,7 @@ function Header() {
                 >
                   blog
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a
                   href="#contact"

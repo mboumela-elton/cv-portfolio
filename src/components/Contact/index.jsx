@@ -79,7 +79,7 @@ function Contact() {
           </div>
         </div>
         <div className="d-flex justify-content-center mb-5 mb-md-5 pb-md-5">
-          <TitleCustom className="text-secondary">TO JOIN ME</TitleCustom>
+          <TitleCustom className="text-secondary">Contact details</TitleCustom>
         </div>
         <Row className="align-items-center justify-content-center gy-3 gx-3">
           <Col sm={12} md={8}>
@@ -209,7 +209,7 @@ function Contact() {
                     }}
                     className="mt-0"
                   >
-                    +237 620 26 39 11/ +237 6 91 87 37 20
+                    +237 620 26 39 11 / +237 6 91 87 37 20
                   </h6>
                 </Link>
               </span>

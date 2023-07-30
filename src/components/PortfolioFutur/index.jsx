@@ -44,11 +44,11 @@ function PortfolioFutur() {
         <div className="mb-5">
           <div>
             <TiretDisign></TiretDisign>
-            <TitleStyle>LEARN PATH</TitleStyle>
+            <TitleStyle>SKILLS</TitleStyle>
           </div>
           <div className="mb-5 mb-md-5 pb-md-5">
             <TitleCustom className="text-secondary">
-              Education & Skills
+              Academy & Aptitude
             </TitleCustom>
           </div>
         </div>
@@ -58,8 +58,8 @@ function PortfolioFutur() {
           </div>
           <div className="col-12 col-md-6 border-start border-top border-light">
             <p className="mt-5">
-              For 2+ years, I have been continuously learning in the field of
-              front-end and experimenting with new technologies and frameworks,
+              For 4+ years, I have been continuously learning in the field of
+              full stack and experimenting with new technologies and frameworks,
               and here you can see a summary of my skills.
             </p>
             <div className="mb-3">
@@ -138,7 +138,7 @@ function PortfolioFutur() {
                     <PurpleProgress
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: '50%' }}
+                      style={{ width: '70%' }}
                       aria-valuenow="25"
                       aria-valuemin="0"
                       aria-valuemax="100"
@@ -196,7 +196,7 @@ function PortfolioFutur() {
                     <PurpleProgress
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: '50%' }}
+                      style={{ width: '40%' }}
                       aria-valuenow="25"
                       aria-valuemin="0"
                       aria-valuemax="100"
