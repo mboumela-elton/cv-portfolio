@@ -167,7 +167,7 @@ function Contact() {
                     }}
                     className="mt-0"
                   >
-                    Cameroun-Yaoundé, Melen, proche ENSPY
+                    Cameroon-Yaounde, Melen, near NASEY
                   </h6>
                 </Link>
               </span>
