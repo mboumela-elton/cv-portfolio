@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'uikit/dist/css/uikit-core.css';
+import 'uikit/dist/js/uikit-core.js';
+
 import { useContext } from 'react';
 import { ThemeContext } from '../../utils/context';
 
@@ -22,7 +25,9 @@ function Header() {
             href="#hero"
             className="navbar-brand text-uppercase fw-bold"
             style={
-              theme === 'light' ? { color: '#212529' } : { color: '#6C757D' }
+              theme === 'light'
+                ? { color: '#212529', textDecoration: 'none' }
+                : { color: '#6C757D', textDecoration: 'none' }
             }
           >
             <span
@@ -61,10 +66,10 @@ function Header() {
             id="navbarNav"
           >
             <ul className="navbar-nav text-light">
-              <li className="nav-item">
+              <li className="nav-item uk-animation-toggle">
                 <a
                   href="#services"
-                  className="nav-link"
+                  className="nav-link uk-animation-fade"
                   style={
                     theme === 'light'
                       ? { color: '#212529' }
@@ -75,10 +80,23 @@ function Header() {
                 </a>
               </li>
 
-              <li className="nav-item mx-md-5">
+              <li className="nav-item uk-animation-toggle mx-md-5">
+                <a
+                  href="#project"
+                  className="nav-link uk-animation-fade"
+                  style={
+                    theme === 'light'
+                      ? { color: '#212529' }
+                      : { color: '#F1F1F1' }
+                  }
+                >
+                  My Work
+                </a>
+              </li>
+              <li className="nav-item uk-animation-toggle">
                 <a
                   href="#educationSkills"
-                  className="nav-link"
+                  className="nav-link uk-animation-fade"
                   style={
                     theme === 'light'
                       ? { color: '#212529' }
@@ -86,19 +104,6 @@ function Header() {
                   }
                 >
                   Skills
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#project"
-                  className="nav-link"
-                  style={
-                    theme === 'light'
-                      ? { color: '#212529' }
-                      : { color: '#F1F1F1' }
-                  }
-                >
-                  My work
                 </a>
               </li>
               {/* <li className="nav-item">
@@ -114,10 +119,10 @@ function Header() {
                   blog
                 </a>
               </li> */}
-              <li className="nav-item mx-md-5">
+              <li className="nav-item uk-animation-toggle mx-md-5">
                 <a
                   href="#contact"
-                  className="nav-link"
+                  className="nav-link uk-animation-fade"
                   style={
                     theme === 'light'
                       ? { color: '#212529' }

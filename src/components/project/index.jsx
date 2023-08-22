@@ -93,6 +93,7 @@ function Project() {
                     src={project.image}
                     alt={project.image}
                     className="w-100 h-100"
+                    style={{ objectFit: 'cover' }}
                   />
                 </Link>
               </div>
