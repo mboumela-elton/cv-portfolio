@@ -5,7 +5,34 @@ import 'uikit/dist/js/uikit-core.js';
 import { Link } from 'react-router-dom';
 import portrait from '../../assets/portrait.svg';
 import styled from 'styled-components';
-import cv from '../../file/CV-MBOUMELA_SOB_Elton_Lewis.pdf';
+import cv from '../../file/CV_MBOUMELA_Elton.pdf';
+
+const networks = [
+  {
+    title: 'github',
+    link: 'https://github.com/mboumela-elton',
+    icon: 'bi bi-github',
+    class: 'list-inline-item mx-md-5',
+  },
+  {
+    title: 'whatsapp',
+    link: 'https://wa.me/+237691873720',
+    icon: 'bi bi-whatsapp',
+    class: 'list-inline-item mx-2',
+  },
+  {
+    title: 'linkedin',
+    link: 'https://www.linkedin.com/in/elton-mboumela-679a1226b/',
+    icon: 'bi bi-linkedin',
+    class: 'list-inline-item mx-2 mx-md-5',
+  },
+  {
+    title: 'mail',
+    link: 'mailto:mboumelae@gmail.com?subject=Need more informations',
+    icon: 'bi bi-envelope-at',
+    class: 'list-inline-item mx-2 mx-md-0',
+  },
+];
 
 const TitleStyle = styled.h6`
   display: inline-block;
@@ -55,61 +82,36 @@ function Hero() {
             </TitleCustom>
             <Mboumela className="my-1 my-md-2">Mboumela.</Mboumela>
             <p className="">
-              As a Full Stack developer, I use several cutting-edge technologies
-              such as Java/Spring, React, Wordpress, Python, SQL, and many more.
+              As a Junior Full Stack developer, I use several cutting-edge
+              technologies such as Java/Spring, React, Python, C, SQL, and many
+              more.
             </p>
             <div className="py-2">
-              <a href={cv} download>
+              <a href={cv}>
                 <button className="btn btn-secondary">dowload cv</button>
               </a>
             </div>
             <ul className="list-inline">
-              <li className="list-inline-item mx-md-5">
-                <Link
-                  data-toggle="tooltip"
-                  title="github"
-                  to="https://github.com/mboumela-elton"
-                  className="text-decoration-none text-secondary"
-                >
-                  <i className="bi bi-github"></i>
-                </Link>
-              </li>
-              <li className="list-inline-item mx-2">
-                <Link
-                  data-toggle="tooltip"
-                  title="whatsapp"
-                  to="https://wa.me/+237691873720"
-                  className="text-decoration-none text-secondary"
-                >
-                  <i className="bi bi-whatsapp"></i>
-                </Link>
-              </li>
-              <li className="list-inline-item mx-2 mx-md-5">
-                <Link
-                  data-toggle="tooltip"
-                  title="linkledin"
-                  to="https://www.linkedin.com/in/elton-mboumela-679a1226b/"
-                  className="text-decoration-none text-secondary"
-                >
-                  <i className="bi bi-linkedin"></i>
-                </Link>
-              </li>
-              <li className="list-inline-item mx-2 mx-md-0">
-                <Link
-                  data-toggle="tooltip"
-                  title="mail"
-                  to="mailto:mboumelae@gmail.com?subject=Need more informations"
-                  className="text-decoration-none text-secondary"
-                >
-                  <i className="bi bi-envelope-at"></i>
-                </Link>
-              </li>
+              {networks.map((network, index) => (
+                <li key={index} className={network.class}>
+                  <Link
+                    data-toggle="tooltip"
+                    title={network.title}
+                    to={network.link}
+                    className="text-decoration-none text-secondary uk-animation-toggle"
+                  >
+                    <span className="uk-animation-fade m-0 p-0">
+                      <i className={network.icon}></i>
+                    </span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="col-12 offset-md-2 col-md-5">
             <div className="uk-animation-toggle">
               <div
-                className="uk-card uk-card-default uk-card-body uk-animation-fade"
+                className="uk-card uk-card-default uk-card-body uk-animation-shake"
                 style={{ background: 'transparent' }}
               >
                 <img

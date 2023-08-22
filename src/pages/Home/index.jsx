@@ -1,9 +1,10 @@
 import Header from '../../components/Header';
 import Hero from '../../components/Hero/index';
 import Services from '../../components/Services';
-import PortfolioFutur from '../../components/PortfolioFutur';
+import EducationSkills from '../../components/EducationSkills';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
+import Project from '../../components/project';
 import GlobalStyle from '../../utils/style/GlobalStyle';
 import { ThemeProvider } from '../../utils/context';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -17,7 +18,8 @@ function Home() {
         <Header />
         <Hero />
         <Services />
-        <PortfolioFutur />
+        <Project />
+        <EducationSkills />
         <Contact />
         <Footer />
       </ThemeProvider>

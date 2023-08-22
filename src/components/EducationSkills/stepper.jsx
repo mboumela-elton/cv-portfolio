@@ -9,18 +9,18 @@ import Paper from '@mui/material/Paper';
 
 const steps = [
   {
-    school: 'Ecole Nationale Polytechnique de Yaoundé',
-    diploma: `Masters Level`,
+    school: 'National Advanced School of Engeneering of Yaounde',
+    diploma: `Licence Level`,
     year: '2020 - 2023',
   },
   {
-    school: 'Université de Yaoundé I, Mathématics branch',
+    school: 'University of Yaoundé I, Mathématics branch',
     diploma: ``,
     year: '2021-2022',
   },
   {
-    school: 'Collège Bilingue Adonaï',
-    diploma: `Baccalaureate (highest honors)`,
+    school: 'Bilingual College Adonaï',
+    diploma: `Baccalaureate C (highest honors)`,
     year: '2013 - 2020',
   },
 ];

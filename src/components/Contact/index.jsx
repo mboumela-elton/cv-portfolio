@@ -41,15 +41,15 @@ const TitleCustom = styled.h1`
 function Contact() {
   // const [formData, setFormData] = useState({});
 
-  // const handleChange = (event) => {
-  //   const { name, value } = event.target;
-  //     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-  // };
+  const handleChange = (event) => {
+    //    const { name, value } = event.target;
+    //    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
 
   const [good, setGood] = useState(false);
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
@@ -59,26 +59,26 @@ function Contact() {
       setGood(true);
     }
     event.preventDefault();
-    // const response = await fetch('http://172.20.10.2:8080/user', {
+    // const response = await fetch('http://localhost:5000/api/save-data', {
     //   method: 'POST',
     //   headers: { 'Content-Type': 'application/json' },
     //   body: JSON.stringify(formData),
     // });
-    // if (response.ok) {
+    //    if (response.ok) {
     setValidated(true);
-    // }
+    //    }
   };
 
   return (
     <section className="my-5 py-5" id="contact">
       <Container>
-        <div className="d-flex justify-content-center">
+        <div className="">
           <div>
             <TiretDisign></TiretDisign>
             <TitleStyle>CONTACT</TitleStyle>
           </div>
         </div>
-        <div className="d-flex justify-content-center mb-5 mb-md-5 pb-md-5">
+        <div className="mb-5 mb-md-5 pb-md-5">
           <TitleCustom className="text-secondary">Contact details</TitleCustom>
         </div>
         <Row className="align-items-center justify-content-center gy-3 gx-3">
@@ -89,7 +89,7 @@ function Contact() {
                   type="text"
                   name="name"
                   placeholder="Your name"
-                  // onChange={handleChange}
+                  onChange={handleChange}
                   required
                 />
               </Form.Group>
@@ -98,7 +98,7 @@ function Contact() {
                   type="email"
                   name="email"
                   placeholder="email"
-                  // onChange={handleChange}
+                  onChange={handleChange}
                   required
                 />
               </Form.Group>
@@ -108,7 +108,7 @@ function Contact() {
                   name="message"
                   placeholder="message"
                   rows={5}
-                  // onChange={handleChange}
+                  onChange={handleChange}
                   required
                 />
               </Form.Group>
@@ -122,10 +122,10 @@ function Contact() {
             </Form>
             {good ? (
               <p
-                className="btn btn-success w-100"
+                className="btn btn-danger w-100"
                 style={{ pointerEvents: 'none' }}
               >
-                SUCESS
+                Unavailable, express yourself via my channels below
               </p>
             ) : null}
           </Col>

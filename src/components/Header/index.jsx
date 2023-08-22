@@ -74,22 +74,10 @@ function Header() {
                   Services
                 </a>
               </li>
-              {/* <li className="nav-item">
-                <a
-                  href="#expertises"
-                  className="nav-link"
-                  style={
-                    theme === 'light'
-                      ? { color: '#212529' }
-                      : { color: '#F1F1F1' }
-                  }
-                >
-                  Expertises
-                </a>
-              </li> */}
+
               <li className="nav-item mx-md-5">
                 <a
-                  href="#portfolio"
+                  href="#educationSkills"
                   className="nav-link"
                   style={
                     theme === 'light'
@@ -98,6 +86,19 @@ function Header() {
                   }
                 >
                   Skills
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#project"
+                  className="nav-link"
+                  style={
+                    theme === 'light'
+                      ? { color: '#212529' }
+                      : { color: '#F1F1F1' }
+                  }
+                >
+                  My work
                 </a>
               </li>
               {/* <li className="nav-item">
@@ -113,7 +114,7 @@ function Header() {
                   blog
                 </a>
               </li> */}
-              <li className="nav-item">
+              <li className="nav-item mx-md-5">
                 <a
                   href="#contact"
                   className="nav-link"
