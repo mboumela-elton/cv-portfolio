@@ -4,6 +4,7 @@ import 'uikit/dist/css/uikit-core.css';
 import 'uikit/dist/js/uikit-core.js';
 import { Link } from 'react-router-dom';
 import portrait from '../../assets/portrait.svg';
+import calendrier from '../../file/calendrier_22_23.pdf';
 import styled from 'styled-components';
 import cv from '../../file/CV_MBOUMELA_Elton.pdf';
 
