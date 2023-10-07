@@ -39,11 +39,11 @@ const TitleCustom = styled.h1`
 `;
 
 function Contact() {
-  // const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({});
 
   const handleChange = (event) => {
-    //    const { name, value } = event.target;
-    //    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
 
   const [good, setGood] = useState(false);
@@ -54,19 +54,20 @@ function Contact() {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+    }
+    event.preventDefault();
+    const response = await fetch('http://localhost:5000/api/save-data', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      setValidated(true);
       setGood(false);
     } else {
       setGood(true);
     }
-    event.preventDefault();
-    // const response = await fetch('http://localhost:5000/api/save-data', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(formData),
-    // });
-    //    if (response.ok) {
-    setValidated(true);
-    //    }
   };
 
   return (
