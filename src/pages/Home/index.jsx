@@ -9,10 +9,10 @@ import GlobalStyle from '../../utils/style/GlobalStyle';
 import { ThemeProvider } from '../../utils/context';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 
 function Home() {
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  // ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
     <div className="container-fluid">
