@@ -45,7 +45,7 @@ function Footer() {
                 key={index}
                 data-toggle="tooltip"
                 title={network.title}
-                to="https://github.com/mboumela-elton"
+                to={network.link}
                 className={network.class + ' uk-animation-toggle m-0 p-0'}
               >
                 <span className="uk-animation-fade m-0 p-0">
