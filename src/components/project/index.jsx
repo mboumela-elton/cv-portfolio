@@ -25,9 +25,9 @@ const project = [
   },
   {
     title: 'API Rest',
-    framework: 'Node js',
+    framework: 'Spring boot / spring security',
     image: api,
-    link: 'https://github.com/mboumela-elton/api-portfolio',
+    link: 'https://github.com/mboumela-elton/authentication-api',
   },
 ];
 
