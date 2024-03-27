@@ -4,7 +4,6 @@ import 'uikit/dist/css/uikit-core.css';
 import 'uikit/dist/js/uikit-core.js';
 import { Link } from 'react-router-dom';
 import portrait from '../../assets/portrait.svg';
-import calendrier from '../../file/calendrier_22_23.pdf';
 import styled from 'styled-components';
 import cv from '../../file/CV_MBOUMELA_Elton.pdf';
 
@@ -84,8 +83,8 @@ function Hero() {
             <Mboumela className="my-1 my-md-2">Mboumela.</Mboumela>
             <p className="">
               As a Junior Full Stack developer, I use several cutting-edge
-              technologies such as Java/Spring, React, Python, C, SQL, and many
-              more.
+              technologies such as Java/Spring, React, Python, C++, SQL, Git and many
+              more. My passion is to find the most suitable solution for your needs.
             </p>
             <div className="py-2">
               <a href={cv}>
