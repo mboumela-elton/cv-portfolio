@@ -10,8 +10,8 @@ import Paper from '@mui/material/Paper';
 const steps = [
   {
     school: 'National Advanced School of Engeneering of Yaounde',
-    diploma: `Licence Level`,
-    year: '2020 - 2023',
+    diploma: `Master Level`,
+    year: '2020 - 2024',
   },
   {
     school: 'University of Yaoundé I, Mathématics branch',
